@@ -1,0 +1,23 @@
+title: Komoot Senior iOS Developer Challenge
+theme: just-the-docs
+
+url: https://morozkin.github.io/Point2Image/
+
+aux_links:
+  "Point2Image on GitHub": https://github.com/morozkin/Point2Image
+
+search_enabled: false
+nav_enabled: false
+
+callouts:
+  tip:
+    title: Tip
+    color: green
+  important:
+    title: Important
+    color: purple
+  note:
+    title: Note
+    color: blue
+  highlight:
+    color: grey-dk
