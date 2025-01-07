@@ -220,8 +220,8 @@ There are two types of tests to consider:
 I applied for this position twice this year, and here is a timeline:
 
 1. Applied in June 2024; rejected the next day.
-2. Applied for the second time in October 2024; rejected in six days; a few weeks later, I was asked if I'd like to proceed :man_shrugging:;
-   received an invitation for a call for a different position :exclamation:; after two :bangbang: follow-up emails I finally received a correct link;
+2. Applied for the second time in October 2024; rejected in six days; a few weeks later, I was asked if I'd like to proceed 🤷🏻‍♂️;
+   received an invitation for a call for a different position ❗️; after two ‼️ follow-up emails I finally received a correct link;
    had a 15 minutes screening call with their iOS Team Lead; completed a challenge and got rejected.
 
 Well, it was a big surprise to me that such a small company can get confused with the invitation link, and it takes 6 working days to get the correct one. 
