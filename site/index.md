@@ -318,7 +318,7 @@ Their default network retry policy is to perform requests three times.
 
 | Unsuccessful Network Request                                         | Incorrect Response                                         |
 |:---------------------------------------------------------------------|:-----------------------------------------------------------|
-| <img src="./assets/Unsuccessful_Network_Request.PNG" width=200 />    | <img src="./assets/Incorrect_Response.PNG" width=200 />    |
+| <img alt="unsuccessful network request on a collections screen" src="./assets/Unsuccessful_Network_Request.PNG" width=200 />    | <img alt="incorrect response on a collections screen" src="./assets/Incorrect_Response.PNG" width=200 />    |
 
 Well, in case of an unsuccessful network request, there is no information about that; the screen is stuck in the loading state, and there is no way to retry manually.
 
@@ -335,7 +335,7 @@ Endpoint is `https://feed-api.komoot.de/v1/*/feed`
 
 | Unsuccessful Network Request                                                |
 |:----------------------------------------------------------------------------|
-| <img src="./assets/Unsuccessful_Network_Request_Feed.gif" width=200 />      |
+| <img alt="unsuccessful network request on a home screen" src="./assets/Unsuccessful_Network_Request_Feed.gif" width=200 />      |
 
 Here, we have the same behavior as with the collections screen. If a server does not respond, the user is not informed, and the pull-to-refresh operation finishes as a successful one.
 
@@ -347,7 +347,7 @@ UI bugs
 
 | Incorrect toolbar position                                         | Empty elevation profile                                         |
 |:-------------------------------------------------------------------|:----------------------------------------------------------------|
-| <img src="./assets/Incorrect_toolbar_position.PNG" width=200 />    | <img src="./assets/Empty_elevation_profile.PNG" width=200 /> |
+| <img alt="incorrect toolbar position" src="./assets/Incorrect_toolbar_position.PNG" width=200 />    | <img alt="empty elevation profile" src="./assets/Empty_elevation_profile.PNG" width=200 /> |
 
 
 ---
