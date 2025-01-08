@@ -78,7 +78,7 @@ Swift. You are free to decide on any architecture.
 
 The challenge itself looks very simple on the surface but contains many corner cases. That's cool. It allows you to demonstrate what you are paying attention to. 
 
-You can test a test app using the built-in Xcode tools to simulate location, but I actually tested it outside. 
+You can test an app using the built-in Xcode tools to simulate location, but I actually tested it outside. 
 It was a pure pleasure to check the result of your work in such a way. 
 This is a big plus; the challenge can push you to go outside! It really makes sense for a company like Komoot.
 
@@ -107,7 +107,7 @@ We also have to write some code if we would like to monitor the network state an
 ### Key areas of focus
 
 Let's highlight the areas we should focus on to build our app. 
-We must deal with location services, networking, Flickr API, UI, testing, and optimizations to preserve battery and network resources.
+We must deal with location services, networking, Flickr API, UI, DI, testing, and optimizations to preserve battery and network resources.
 
 #### Location services
 {: .label .label-purple }
@@ -179,12 +179,19 @@ Image displaying is a complicated topic. We can outline the requirements:
 * perform decoding/resizing/transformation of the downloaded image on a background thread
 * cache processed images in the LRU cache with configurable constraints
 
+#### DI
+{: .label .label-purple }
+
+A DI container with flexible storage policies is required for optimal memory consumption. It is crucial to control the lifetime of our objects, whether they should be kept in memory for the whole app lifetime or only while there is at least one reference to them.
+
+We can also end up with different containers for each major module in our app, but due to the size of the codebase, this doesn't make much sense for this test project.
+
 #### Testing
 {: .label .label-purple }
 
 There are two types of tests to consider:
 * UI tests verify that UI correctly reflects all the possible states
-* Unit tests verify that components worked as expected based on a different input. The use of DI principles and abstractions is essential to supporting this kind of testing
+* Unit tests verify that components worked as expected based on a different input. The use of [DI](#di) principles and abstractions is essential to supporting this kind of testing
 
 #### Optimizations
 {: .label .label-purple }
