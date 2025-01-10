@@ -323,9 +323,16 @@ Endpoint is `https://api.komoot.de/*/collections/*`
 
 Their default network retry policy is to perform requests three times.
 
-| Unsuccessful Network Request                                         | Incorrect Response                                         |
-|:---------------------------------------------------------------------|:-----------------------------------------------------------|
-| <img alt="unsuccessful network request on a collections screen" src="./assets/Unsuccessful_Network_Request.PNG" width=200 />    | <img alt="incorrect response on a collections screen" src="./assets/Incorrect_Response.PNG" width=200 />    |
+<table>
+    <tr>
+        <th>Unsuccessful Network Request</th>
+        <th>Incorrect Response</th>
+    </tr>
+    <tr>
+        <td>{% picture webp Unsuccessful_Network_Request.PNG --alt unsuccessful network request on a collections screen %}</td>
+        <td>{% picture webp Incorrect_Response.PNG --alt incorrect response on a collections screen %}</td>
+    </tr>
+</table>
 
 Well, in case of an unsuccessful network request, there is no information about that; the screen is stuck in the loading state, and there is no way to retry manually.
 
@@ -340,9 +347,19 @@ Home screen
 
 Endpoint is `https://feed-api.komoot.de/v1/*/feed`
 
-| Unsuccessful Network Request                                                |
-|:----------------------------------------------------------------------------|
-| <img alt="unsuccessful network request on a home screen" src="./assets/Unsuccessful_Network_Request_Feed.gif" width=200 />      |
+<table>
+    <tr>
+        <th>Unsuccessful Network Request</th>
+    </tr>
+    <tr>
+        <td>
+         <picture>
+            <source srcset="{{ site.baseurl }}/assets/Unsuccessful_Network_Request_Feed.webp" type="image/webp" />
+            <img src="{{ site.baseurl }}/assets/Unsuccessful_Network_Request_Feed.gif" alt="unsuccessful network request on a collections screen" />
+         </picture>
+        </td>
+    </tr>
+</table>
 
 Here, we have the same behavior as with the collections screen. If a server does not respond, the user is not informed, and the pull-to-refresh operation finishes as a successful one.
 
@@ -351,11 +368,16 @@ Here, we have the same behavior as with the collections screen. If a server does
 UI bugs
 {: .label .label-green }
 
-
-| Incorrect toolbar position                                         | Empty elevation profile                                         |
-|:-------------------------------------------------------------------|:----------------------------------------------------------------|
-| <img alt="incorrect toolbar position" src="./assets/Incorrect_toolbar_position.PNG" width=200 />    | <img alt="empty elevation profile" src="./assets/Empty_elevation_profile.PNG" width=200 /> |
-
+<table>
+    <tr>
+        <th>Incorrect toolbar position</th>
+        <th>Empty elevation profile</th>
+    </tr>
+    <tr>
+        <td>{% picture webp Incorrect_toolbar_position.PNG --alt incorrect toolbar position %}</td>
+        <td>{% picture webp Empty_elevation_profile.PNG --alt empty elevation profile %}</td>
+    </tr>
+</table>
 
 ---
 

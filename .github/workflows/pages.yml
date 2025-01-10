@@ -37,6 +37,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      # Jekyll Picture Tag requires libvips libraries for resizing images
+      - name: Install JPT's dependencies
+        run: sudo apt-get install libvips-tools
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:

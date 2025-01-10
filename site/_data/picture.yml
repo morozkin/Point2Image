@@ -1,0 +1,5 @@
+presets:
+  webp:
+    formats: [webp, original]
+    format_quality:
+      webp: 50

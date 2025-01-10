@@ -4,6 +4,8 @@ theme: just-the-docs
 
 url: https://morozkin.github.io/Point2Image/
 
+exclude: ["assets/images/"]
+
 aux_links:
   "Point2Image on GitHub": https://github.com/morozkin/Point2Image
 
@@ -22,3 +24,7 @@ callouts:
     color: blue
   highlight:
     color: grey-dk
+
+picture:
+  source: "assets/images/"
+  output: "assets/images/"
