@@ -12,6 +12,9 @@ aux_links:
 search_enabled: false
 nav_enabled: false
 
+back_to_top: true
+back_to_top_text: "Back to top"
+
 callouts:
   tip:
     title: Tip
