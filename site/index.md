@@ -4,6 +4,7 @@ layout: home
 ---
 
 # Komoot Senior iOS Developer Challenge
+{: .no_toc }
 
 I pursue two goals with this repository:
 - to summarize my thoughts on the challenge itself
@@ -15,6 +16,12 @@ Feel free to use this code as a starting point.
 The latter may be very helpful to others who are considering Koomot as a future employer. 
 
 I hope that this public review could possibly lead to hiring process improvements in Komoot and make someone think twice before investing their priceless time into working on the challenge for free.
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 ---
 
@@ -110,7 +117,7 @@ Let's highlight the areas we should focus on to build our app.
 We must deal with location services, networking, Flickr API, UI, DI, testing, and optimizations to preserve battery and network resources.
 
 #### Location services
-{: .label .label-purple }
+{: .no_toc .label .label-purple }
 
 `.authorizedWhenInUse` level of authorization is enough for the challenge purposes. `NSLocationWhenInUseUsageDescription` must be provided in the `Info.plist` with some explanatory text.
 
@@ -131,12 +138,12 @@ If the main thread needs to be offloaded from such messages, we can create a sep
 One can remember the same trick for `NSURLConnection`.
 
 #### Networking
-{: .label .label-purple }
+{: .no_toc .label .label-purple }
 
 I have nothing new to add here. Custom retry policies and tracking network availability may be needed, but other than that, the right way to handle general errors must be chosen.
 
 #### Flickr API
-{: .label .label-purple }
+{: .no_toc .label .label-purple }
 
 [flickr.photos.search](https://www.flickr.com/services/api/flickr.photos.search.html) endpoint is what we need to get photos for a specific location.
 
@@ -150,7 +157,7 @@ There are also a few things to consider when working with Flickr API:
 * responses for two location points that are not too far from each other may contain the same photos; we should be aware of possible duplicates
 
 #### UI
-{: .label .label-purple }
+{: .no_toc .label .label-purple }
 
 There are three main focus areas for the UI, in my opinion:
 * make sure that every possible state is covered
@@ -180,21 +187,21 @@ Image displaying is a complicated topic. We can outline the requirements:
 * cache processed images in the LRU cache with configurable constraints
 
 #### DI
-{: .label .label-purple }
+{: .no_toc .label .label-purple }
 
 A DI container with flexible storage policies is required for optimal memory consumption. It is crucial to control the lifetime of our objects, whether they should be kept in memory for the whole app lifetime or only while there is at least one reference to them.
 
 We can also end up with different containers for each major module in our app, but due to the size of the codebase, this doesn't make much sense for this test project.
 
 #### Testing
-{: .label .label-purple }
+{: .no_toc .label .label-purple }
 
 There are two types of tests to consider:
 * UI tests verify that UI correctly reflects all the possible states
 * Unit tests verify that components worked as expected based on a different input. The use of [DI](#di) principles and abstractions is essential to supporting this kind of testing
 
 #### Optimizations
-{: .label .label-purple }
+{: .no_toc .label .label-purple }
 
 1. As I mentioned before, `CLLocationManager` supports location updates pausing when there are no significant device movements over longer period of time.
    It's beneficial to support such a feature in an app that can be run for hours. We must request the `.authorizedAlways` authorization level to properly support this feature,
@@ -235,6 +242,7 @@ Well, it was a big surprise to me that such a small company can get confused wit
 I'm emphasizing this because it was my first time encountering something like this this year.
 
 ### What does the application process look like?
+{: .no_toc }
 
 The application process is not as simple as attaching a CV and cover letter. You already have to invest some time in this step.
 
@@ -246,6 +254,7 @@ They ask questions that require some time to think about:
 In addition, there are a few technical questions, but they are relatively easy and fast to answer.
 
 ### Was I good enough with the challenge?
+{: .no_toc }
 
 Well, definitely not. Otherwise, such a reflection wouldn't make sense. Initially, I didn't set up any time constraints for myself; it was obvious that the challenge would take more than four hours. 
 It isn't all about coding; you have to think a lot about the task, find out what can go wrong, choose the right tools, and figure out the best abstractions to reach a goal.
@@ -279,6 +288,7 @@ I actually wrote a little bit about the challenges and some improvements, but it
 > That's all I was thinking about. I'd appreciate your feedback.
 
 ### Feedback
+{: .no_toc }
 
 {: .highlight }
 > We acknowledge you have invested a lot of time and effort into this process and I would like to provide you with more in depth feedback.
@@ -307,6 +317,7 @@ No one is interested in providing detailed feedback; it is time-consuming.
 I've reviewed test assignments in the past, but the feedback has always been personalised, with references to each assignment's code. That's why I have a good understanding of how in-depth feedback can look.
 
 ### Does Komoot iOS app set a standard of excellence in quality?
+{: .no_toc }
 
 Based on the feedback I received, the Komoot iOS team seems to have high-quality standards. But is this reflected in their application?
 
