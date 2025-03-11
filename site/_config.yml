@@ -2,7 +2,8 @@ title: Komoot Senior iOS Developer Challenge
 description: Interview experience at Komoot for a senior iOS developer position
 theme: just-the-docs
 
-url: https://morozkin.github.io/Point2Image/
+url: https://morozkin.github.io
+baseurl: /Point2Image
 
 exclude: ["assets/images/"]
 
